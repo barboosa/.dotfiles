@@ -16,10 +16,10 @@ apt get install stow -y
 ## Installation
 To check what simlinks will be created, run:
 ```
-stow -nvt ~ */
+stow [folder] -nv
 ```
 
 To create the simlinks run:
 ```
-stow -vt ~ */
+stow [folder] -v
 ```
