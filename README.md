@@ -1,11 +1,25 @@
 # Dotfiles Management Repo
 
-To check what will happen before running it:
+## Requirements
+Install following things first
+
+### Git
 ```
-stow -nvt *
+apt get install git -y
 ```
 
-To run it after checking it use:
+### Git
 ```
-stow -vt *
+apt get install stow -y
+```
+
+## Installation
+To check what simlinks will be created, run:
+```
+stow -nvt ~ */
+```
+
+To create the simlinks run:
+```
+stow -vt ~ */
 ```
