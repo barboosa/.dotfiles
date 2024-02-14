@@ -77,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export REPOS="$HOME/dev"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -100,7 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
-alias dotfiles="cd ~/.dotfiles"
+alias dotfiles="cd $HOME/.dotfiles"
+alias ixcloud="$REPOS/portal"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
