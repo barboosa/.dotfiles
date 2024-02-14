@@ -83,7 +83,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+_ split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -187,3 +187,4 @@ bar {
 
 # Custom stuff
 exec_always nitrogen --restore
+exec_always --no-startup-id $HOME/.screenlayout/primary.sh
