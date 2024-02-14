@@ -23,4 +23,4 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
-vim.opt.clipboard:append("unnamedplus")
+vim.lsp.set_log_level("debug")
