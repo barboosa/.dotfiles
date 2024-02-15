@@ -77,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export DOTFILES="$HOME/.dotfiles"
 export REPOS="$HOME/dev"
 
 # You may need to manually set your language environment
@@ -101,8 +102,13 @@ export REPOS="$HOME/dev"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
-alias dotfiles="cd $HOME/.dotfiles"
+alias dotfiles="cd $DOTFILES"
 alias ixcloud="$REPOS/portal"
+alias repos="cd $REPOS"
+alias dotedit="cd $DOTFILES && v ."
+alias zshedit="cd $DOTFILES/zsh && v .zshrc"
+alias i3edit="cd $DOTFILES/i3/.config/i3 && v config"
+alias vedit="cd $DOTFILES/nvim/.config/nvim && v ."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
