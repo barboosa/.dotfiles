@@ -1,6 +1,7 @@
 return {
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
+    {'neovim/nvim-lspconfig'},
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -11,7 +12,6 @@ return {
             lsp_zero.on_attach(function(client, bufnr)
                 lsp_zero.default_keymaps({buffer = bufnr})
             end)
-            require('lspconfig').lua_ls.setup({})
             require('mason').setup({})
             require('mason-lspconfig').setup({
                 ensure_installed = {
@@ -24,13 +24,14 @@ return {
             })
         end
     },
-    {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-buffer'},
     {
         'L3MON4D3/LuaSnip',
-        depends = {'rafamadriz/friendly-snippets'},
+        dependencies = {
+            {'rafamadriz/friendly-snippets'},
+        }
     },
     {'saadparwaiz1/cmp_luasnip'},
     {'onsails/lspkind-nvim'},
