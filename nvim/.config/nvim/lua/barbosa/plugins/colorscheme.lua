@@ -1,35 +1,10 @@
 return {
 	{
 		"folke/tokyonight.nvim",
-		priority = 1000,
+		lazy = false,
+        priority = 1000,
 		config = function()
-			require("tokyonight").setup({
-				style = "night",
-			})
-			vim.cmd("colorscheme tokyonight")
+			vim.cmd.colorscheme "tokyonight-night"
 		end
 	},
-	{
-		"rose-pine/neovim",
-		priority = 1000,
-		config = function()
-			require("rose-pine").setup({
-				variant = "main",
-			})
-			--vim.cmd("colorscheme rose-pine")
-		end
-	},
-	{
-		"catppuccin/nvim",
-		priority = 1000,
-		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-				background = {
-					dark = "mocha",
-				},
-			})
-			--vim.cmd.colorscheme "catppuccin"
-		end
-	}
 }
