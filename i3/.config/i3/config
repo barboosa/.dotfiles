@@ -191,5 +191,4 @@ exec_always nitrogen --restore
 exec_always --no-startup-id $HOME/.screenlayout/primary.sh
 exec_always --no-startup-id diodon
 
-# Suspend
-bindsym $mod+Shift+period exec systemctl suspend
+bindsym Ctrl+Shift+l exec "i3lock -c 000000"
