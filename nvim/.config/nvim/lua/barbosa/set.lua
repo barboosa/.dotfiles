@@ -27,4 +27,3 @@ opt.ignorecase = true
 opt.updatetime = 1000
 
 opt.scrolloff = 10
-opt.smoothscroll = true
