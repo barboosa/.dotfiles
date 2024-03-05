@@ -192,3 +192,8 @@ exec_always --no-startup-id $HOME/.screenlayout/primary.sh
 exec_always --no-startup-id diodon
 
 bindsym Ctrl+Shift+l exec "i3lock -c 000000"
+
+#interactive screenshot by pressing printscreen
+bindsym Print exec gnome-screenshot -i 
+#crop-area screenshot by pressing Mod + printscreen
+bindsym $mod+Print exec gnome-screenshot -a
