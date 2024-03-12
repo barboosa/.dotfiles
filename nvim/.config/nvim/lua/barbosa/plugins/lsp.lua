@@ -32,7 +32,7 @@ return {
             require('mason').setup({})
             require('mason-lspconfig').setup({
                 ensure_installed = {
-                    "omnisharp", "lua_ls", "tsserver", "jsonls", "html", "cssls", "rust_analyzer", "pyright", "gopls"
+                    "omnisharp", "lua_ls", "tsserver", "jsonls", "volar","html", "cssls", "rust_analyzer", "pyright", "gopls"
                 },
 
                 handlers = {

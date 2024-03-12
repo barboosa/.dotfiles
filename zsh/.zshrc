@@ -78,7 +78,6 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export DOTFILES="$HOME/.dotfiles"
-export REPOS="$HOME/dev"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -103,8 +102,8 @@ export REPOS="$HOME/dev"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
 alias dotfiles="cd $DOTFILES"
-alias ixcloud="$REPOS/portal"
-alias repos="cd $REPOS"
+alias work="cd $HOME/work"
+alias personal="cd $HOME/personal"
 alias dotedit="cd $DOTFILES && v ."
 alias zshedit="cd $DOTFILES/zsh && v .zshrc"
 alias i3edit="cd $DOTFILES/i3/.config/i3 && v config"
