@@ -78,7 +78,7 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace 5'
 
 
 # Possible values: (qwerty|dvorak)
