@@ -1,0 +1,10 @@
+theme = "TokyoNight"
+
+background = 000000
+background-opacity = 0.85
+background-blur = false
+confirm-close-surface=false
+
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+
+
