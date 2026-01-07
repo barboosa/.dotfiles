@@ -128,7 +128,7 @@ alias stat="git status"
 alias push="git push"
 alias g="lazygit"
 
-alias restow='stow -D -v . && stow -v .'
+alias restow='cd $DOTFILES && stow -R */'
 alias v="nvim"
 
 eval "$(starship init zsh)"
